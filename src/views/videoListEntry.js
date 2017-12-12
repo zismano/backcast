@@ -7,8 +7,8 @@ var VideoListEntryView = Backbone.View.extend({
   render: function() {
   //  console.log('hi');
     this.$el.html(this.template(this.model.attributes));
-    this.$el.find('.video-list-entry-title').text(this.model.attributes.snippet.title);
-    
+    this.$el.find('.video-list-entry-title').text(this.model.snippet.title);
+    this.$el.find('.video-list-entry-detail').text(this.model.snippet.description);
     return this.$el;
   },
 
