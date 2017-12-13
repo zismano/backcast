@@ -11,7 +11,6 @@ var VideoListEntryView = Backbone.View.extend({
     // var target = $(e.target);
     // console.log(target);
     var model = this.model;
-    console.log(model)
     model.select();  // does nothing, only to pass test
   },
     
